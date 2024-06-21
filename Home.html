@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Event Module</title>
+<style>
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.button{
+    padding-left: 20px;
+}
+</style>
+
+</head>
+<body>
+    <button onclick="myFunction()">Enable Darkmode</button>
+    <div class="container">
+        <header class="header">
+            <h1>Event Module</h1>
+            <p>Stay informed about upcoming events and manage event attendance.</p>
+        </header>
+
+        <section class="event-updates section">
+            <a href="event_updates.html">
+            <h2>Event Updates</h2>
+            <p>Receive updates on workshops, seminars, and social gatherings.</p>
+            </a>
+        </section>
+
+        <section class="event-coordinators section">
+            <a href="attendance.html">
+            <h2>Event Coordinators</h2>
+            <p>Authorized individuals can mark student attendance for Dance Events.</p></a>
+        </section>
+        
+        <section class="event-coordinators section">
+            <a href="attendancehack.html">
+            <h2>Event Coordinators</h2>
+            <p>Authorized individuals can mark student attendance for Hackathon Events.</p></a>
+        </section>
+
+
+    
+
+        <section class="teacher-tracking section">
+            <a href="search.html">
+            <h2>Teacher Tracking</h2>
+            <p>Teachers can monitor the students participating in a Dance event by selecting the class name.</p>
+            </a>
+         </section>
+         
+         <section class="teacher-tracking section">
+            <a href="searchHACK.html">
+            <h2>Teacher Tracking</h2>
+            <p>Teachers can monitor the students participating in a Hackathon event by selecting the class name.</p>
+            </a>
+         </section>
+
+        
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+        <footer class="footer">
+            <p>&copy; 2023 Event Module. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Form</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+    }
+    
+    .attendance-form {
+        width: 400px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-field {
+        width: calc(100% - 10px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        transition: border-color 0.3s ease;
+    }
+    
+    .input-field:focus {
+        outline: none;
+        border-color: #6cb1e1;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #6cb1e1;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        background-color: #4a8ab7;
+    }
+    
+    .stu-att input[type="submit"] {
+            background-color: #6cb1e1;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .stu-att input[type="submit"]:hover {
+            background-color: #4a8ab7;
+        }
+
+        .stu body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .stu h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Attendance Form</h2>
+    <form action="attendanceRecordHack.php" method="post" class="attendance-form">
+        <div class="form-group">
+            <label for="attendance_id">Attendance ID:</label><br>
+            <input type="text" id="attendance_id" name="attendance_id" class="input-field">
+        </div>
+
+        <div class="form-group">
+            <label for="srn">SRN:</label><br>
+            <input type="text" id="srn" name="srn" class="input-field">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" class="input-field">
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+    </form>
+    <!-- <form action="attendance.php" method="post">
+        <div class="stu-att">
+            <input type="submit" value="students Present list" style="text-align: center;">
+        </div>
+    </form> -->
+</body>
+</html>

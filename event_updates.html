@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Updates</title>
+    <link rel="stylesheet" href="event_updates.css">
+</head>
+<body>
+
+    <header>
+        <h1>Event Module</h1>
+    </header>
+
+    <section id="event-updates">
+        <h2>Event Updates</h2><hr>
+        <div id="event-container">
+            <!-- Events will be dynamically added here from the backend -->
+        </div>
+    </section>
+
+    <script >
+  // Sample JavaScript code to dynamically fetch and display events from the backend
+
+// Simulated data from the backend (replace this with actual backend integration)
+const eventData = [
+    {
+        title: 'Dance Event',
+        date: 'January 15, 2023',
+        time: '2:00 PM - 5:00 PM',
+        venue: 'Auditorium',
+        description: 'Join us for an exciting dance event with performances from talented dancers.',
+        photo: 'dance.jpg', // Add the photo file name or URL
+    },
+    {
+        title: 'Hackathon',
+        date: 'January 22, 2023',
+        time: '10:00 AM - 6:00 PM',
+        venue: 'Computer Lab',
+        description: 'Participate in our hackathon and showcase your coding skills.',
+        photo: 'hackathon.jpeg', // Add the photo file name or URL
+    },
+    // Add more events as needed
+];
+
+// Function to dynamically populate events in the container
+function populateEventContainer() {
+    const eventContainer = document.getElementById('event-container');
+
+    eventData.forEach(event => {
+        const eventUpdate = document.createElement('div');
+        eventUpdate.classList.add('event-update');
+        eventUpdate.innerHTML = `
+            <h3>${event.title}</h3>
+            <img src="${event.photo}" alt="${event.title} Photo" class="event-photo">
+            <p>Date: ${event.date}</p>
+            <p>Time: ${event.time}</p>
+            <p>Venue: ${event.venue}</p>
+            <p>Description: ${event.description}</p>
+            <button onclick="registerForEvent('${event.title}')">Register for Dance Event</button>
+            <button onclick="registerForHackEvent('${event.title}')">Register For Hackathon</button>
+        `;
+
+        eventContainer.appendChild(eventUpdate);
+    });
+}
+
+// Function to handle event registration and redirect to another page
+function registerForEvent(eventName) {
+    // Replace this with your actual registration logic
+    // For demonstration purposes, redirecting to another page
+    window.location.href = `stu.html?event=${eventName}`;
+   
+}
+function registerForHackEvent(eventName) {
+    // Replace this with your actual registration logic
+    // For demonstration purposes, redirecting to another page
+    window.location.href = `hack.html?event=${eventName}`;
+   
+}
+
+// Call the function to populate events on page load
+populateEventContainer();
+
+
+    </script>
+</body>
+</html>

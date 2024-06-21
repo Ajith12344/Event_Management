@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <style>
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#title {
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(215deg,rgba(75, 113, 179, 0.8),rgba(124, 192, 147, 0.8)),url(../Abhi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Add some responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+<body>
+     <header class="header">
+            <h1 id="title" >
+                Registration  form for Dance Event
+            </h1>
+        </header></br>
+    <form action="insertst.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        
+        <label for="srn">SRN:</label>
+        <input type="text" name="srn" id="srn"><br><br>
+        
+        <label for="gender">GENDER:</label>
+        <input type="text" name="gender" id="gender"><br><br>
+        
+        <label for="class_name">Class_Name:</label>
+        <input type="text" name="class_name" id="class_name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

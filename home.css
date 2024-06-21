@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: linear-gradient(to right, #222831, #393E46); /* Gradient from Dark Blue-Grey to Dark Grey */
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header p {
+    font-style: italic;
+}
+
+.section {
+    background-color: #EEEEEE; /* Light Gray */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin: 2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.section h2 {
+    color: #222831; /* Dark Blue-Grey */
+    border-bottom: 2px solid #393E46; /* Dark Grey */
+    padding-bottom: 0.5em;
+}
+
+.event-updates {
+    background: linear-gradient(to right, #00ADB5, #393E46); /* Gradient from Teal to Dark Grey */
+}
+
+.event-coordinators {
+    background: linear-gradient(to right, #393E46, #00ADB5); /* Gradient from Dark Grey to Teal */
+}
+
+.registration {
+    background: linear-gradient(to right, #00ADB5, #393E46); /* Gradient from Teal to Dark Grey */
+}
+
+.automated-lists {
+    background: linear-gradient(to right, #EEEEEE, #393E46); /* Gradient from Light Grey to Dark Grey */
+}
+
+.teacher-tracking {
+    background: linear-gradient(to right, #393E46, #00ADB5); /* Gradient from Dark Grey to Teal */
+}
+
+.footer {
+    background: linear-gradient(to right, #222831, #393E46); /* Gradient from Dark Blue-Grey to Dark Grey */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
