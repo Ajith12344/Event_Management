@@ -57,7 +57,7 @@
     mysqli_close($con);
     ?>
 
-<form action="Home.html" method="post">
+<form action="index.html" method="post">
     
             <input type="submit" value="Home" style="text-align: center;">
         

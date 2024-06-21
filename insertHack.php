@@ -38,7 +38,7 @@ die("error:". mysql_error());
 echo "You are successfully registered";
 mysqli_close($con)
 ?>
-<form action="Home.html" method="post">
+<form action="index.html" method="post">
     
     <input type="submit" value="Home" style="text-align: center;">
 
